@@ -4,20 +4,47 @@
   padding: 0;
   position: relative;
   z-index: 10;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  text-align: center;
 }
 
-.hidden {
-  display: none;
+body {
+  display: flex;
+  justify-content: center;
 }
-#container {
-  margin: 0;
+
+li {
+  list-style: none;
 }
 
 img {
   position: absolute;
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -10;
+}
+
+#container {
+  margin: 10em;
+}
+
+header {
+  padding-bottom: 3em;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25em;
+}
+
+.hidden {
+  display: none;
 }
