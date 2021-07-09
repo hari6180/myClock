@@ -6,4 +6,4 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `/img/${chosenImage}`;
 
-document.body.insertBefore(bgImage, document.querySelector("script"));
+document.body.append(bgImage, document.querySelector("#container"));
