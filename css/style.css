@@ -31,10 +31,10 @@ img {
 
 #container {
   margin: 0;
-  padding: 5em;
 }
 
 header {
+  padding-top: 15em;
   padding-bottom: 3em;
 }
 
@@ -46,13 +46,40 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+#todo-list {
+  padding: 2rem;
+}
+
+#todo-list li {
+  background-color: rgba(255, 255, 255, 0.438);
+  min-width: 30em;
+  max-width: 30em;
+  text-align: left;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list span {
+  color: black;
+}
+
+#todo-list button {
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 25em;
 }
 
 .hidden {
