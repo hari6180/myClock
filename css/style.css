@@ -34,12 +34,35 @@ img {
 }
 
 header {
-  padding-top: 15em;
-  padding-bottom: 3em;
+  padding-top: 12rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
   font-size: 6rem;
+}
+
+#login-form {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form input {
+  min-width: 17em;
+}
+
+#login-form button {
+  color: black;
+  text-align: center;
+  background-color: khaki;
+  border: none;
+  width: 4.7rem;
+  height: 3rem;
+  padding: 0;
+  margin: 0 0 0 0.2rem;
+  border-radius: 10px;
 }
 
 section {
@@ -76,6 +99,21 @@ section {
   background-color: rgba(255, 255, 255, 0);
 }
 
+input {
+  background-color: rgba(255, 248, 220, 0.527);
+  border: none;
+  color: black;
+  font-size: 1.5em;
+  min-width: 30rem;
+  max-width: 30rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -83,5 +121,5 @@ footer {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
