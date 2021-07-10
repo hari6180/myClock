@@ -20,7 +20,7 @@ li {
   list-style: none;
 }
 
-img {
+.background {
   position: absolute;
   display: block;
   width: 100vw;
@@ -118,6 +118,16 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+#weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather_icon {
+  width: 50px;
 }
 
 .hidden {
