@@ -1,8 +1,12 @@
 const clock = document.querySelector("h2#clock");
 const timer = document.querySelector("h2#timer");
+const clockButton = document.querySelector(".clock_btn");
+const timerButton = document.querySelector(".timer_btn");
 
 let min = 0;
 let sec = 0;
+
+const CHOSEN = "chosen";
 
 function getClock() {
   const date = new Date();
@@ -28,20 +32,21 @@ function changeClockMode(event) {
   event.preventDefault();
   clock.classList.remove(HIDDEN_CLASSNAME);
   timer.classList.add(HIDDEN_CLASSNAME);
+  timerButton.classList.remove(CHOSEN);
+  clockButton.classList.add(CHOSEN);
 }
 
 function changeTimerMode(event) {
   event.preventDefault();
   timer.classList.remove(HIDDEN_CLASSNAME);
   clock.classList.add(HIDDEN_CLASSNAME);
+  clockButton.classList.remove(CHOSEN);
+  timerButton.classList.add(CHOSEN);
 }
-
-const clockButton = document.querySelector(".clock_btn");
-const timerButton = document.querySelector(".timer_btn");
 
 clockButton.addEventListener("click", changeClockMode);
 timerButton.addEventListener("click", changeTimerMode);
 
 getClock();
-setInterval(getClock, 1000);
 setInterval(getTimer, 1000);
+setInterval(getClock, 1000);

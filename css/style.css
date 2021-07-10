@@ -38,6 +38,23 @@ header {
   padding-bottom: 1rem;
 }
 
+.clock_btn,
+.timer_btn {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.308);
+  width: 6rem;
+  height: 2rem;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: rgba(0, 183, 255, 0.308);
+}
+
+.chosen {
+  background-color: tomato;
+}
+
 h2 {
   font-size: 6rem;
 }
@@ -100,7 +117,7 @@ section {
 }
 
 input {
-  background-color: rgba(255, 248, 220, 0.527);
+  background-color: rgba(255, 255, 255, 0.527);
   border: none;
   color: black;
   font-size: 1.5em;
