@@ -12,14 +12,18 @@
       rel="stylesheet"
     />
 
-    <title>Momentum App</title>
+    <title>My pomodoro timer</title>
   </head>
   <body>
     <div>
       <div id="container">
         <header>
+          <div id="button-wrap">
+            <button class="clock_btn">clock</button>
+            <button class="timer_btn">timer</button>
+          </div>
           <h2 id="clock" class="hidden">00:00:00</h2>
-          <h2 id="timer">00:00</h2>
+          <h2 id="timer" class="hidden">00:00</h2>
           <form id="login-form" class="hidden">
             <input required maxlength="15" type="text" placeholder="What is your name?" />
             <button>Log In</button>
