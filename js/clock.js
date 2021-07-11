@@ -18,7 +18,7 @@ function getClock() {
 
 function getTimer() {
   if (sec < 59) {
-    setInterval(sec++, 1000);
+    sec++;
   } else {
     sec = 0;
     min++;
